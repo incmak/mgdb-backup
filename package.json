@@ -11,7 +11,7 @@
     }
   ],
   "bin": {
-    "mgdb": "./backup-mongodb.js"
+    "mgdb": "backup-mongodb.js"
   },
   "scripts": {
     "start": "node backup-mongodb.js",
