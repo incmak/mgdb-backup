@@ -1,0 +1,69 @@
+{
+  "name": "mgdb-backup",
+  "version": "1.0.0",
+  "description": "CLI tool to backup and restore MongoDB databases — supports full cluster dumps, selective multi-database backup with wildcard patterns, and interactive restore. A lightweight alternative to mongodump/mongorestore that works with MongoDB Atlas and self-hosted instances.",
+  "main": "backup-mongodb.js",
+  "authors": [
+    {
+      "name": "incmak",
+      "email": "incmak@outlook.com",
+      "url": "https://incmak.vercel.app"
+    }
+  ],
+  "bin": {
+    "mgdb": "./backup-mongodb.js"
+  },
+  "scripts": {
+    "start": "node backup-mongodb.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "node backup-mongodb.js --help"
+  },
+  "keywords": [
+    "mongodb",
+    "mongo",
+    "backup",
+    "restore",
+    "mongodump",
+    "mongorestore",
+    "atlas",
+    "database",
+    "dump",
+    "export",
+    "import",
+    "cli",
+    "nosql",
+    "database-backup",
+    "mongo-backup",
+    "cluster-backup",
+    "database-restore",
+    "mongodb-cli",
+    "mongo-atlas",
+    "data-export",
+    "data-import",
+    "mongodb-dump",
+    "mongodb-tools",
+    "database-migration"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bson": "^6.0.0",
+    "mongodb": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/incmak/mgdb-backup.git"
+  },
+  "homepage": "https://github.com/incmak/mgdb-backup#readme",
+  "bugs": {
+    "url": "https://github.com/incmak/mgdb-backup/issues"
+  },
+  "files": [
+    "backup-mongodb.js",
+    "README.md",
+    "LICENSE",
+    ".env.example"
+  ]
+}
